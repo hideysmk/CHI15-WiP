@@ -1,0 +1,230 @@
+\section{Introduction}
+
+Crowdsourced collective human intelligence has proved its usefulness on tasks 
+that are intractable to mere machine processing or too expensive to handle by human experts. 
+However, regular crowdsourcing is heavily decontext- ualized. 
+Online crowds can mostly complete tasks that do not need specific knowledge of a local context 
+(e.g., things happened to a specific community or individual). 
+For tasks that need contextual knowledge, 
+such as answering questions of specific communities, or editing personal documents, 
+crowdsourcing to unknown workers appears to be infeasible. 
+Instead, friendsourcing (outsourcing to friends of one's social network) \cite{Bernstein:TOCHI10:Collabio}
+or communitysourcing (outsourcing to community members) \cite{Heimerl:CHI12:CommunitySourcing} 
+can have value that regular crowdsourcing does not have in these scenarios.
+
+It has been shown that networking and communication on social network sites (SNSs), such as Facebook and Twitter, 
+have social capital and value for problem solving \cite{Gray:CSCW13:WhoWantsKnow}. 
+What's not clear is how to effectively turn friends to friendsourcing workers to unleash their problem solving potential. 
+Clearly, individuals will not be able to friendsource tasks very well if what's offered explicitly and implicitly, 
+such as payment and reciprocal help, does not match what is expected by their friends. 
+It is therefore crucial to know whether task requesters and potential workers, who are also friends of requesters, 
+would share consensus on the estimated costs of specific tasks, 
+and what is the reasoning behind requesters' and workers' determination of ``how much the work costs''. 
+Existing research typically assumes that monetary payment and reward are not required in friendsourcing \cite{Brady:HCOMP14:Microvolunteering}, 
+but the assumption is more of an intuition, and also needs careful verification. 
+Based on the background discussed, 
+it is useful to understand what individuals would like to offer to their friends if they need to friendsource a task, 
+and reversely, what would they expect if they're asked to help with a friendsourcing task instead?
+
+In the rest of the paper, 
+we present an exploratory study using surveys and interviews to investigate individuals' reasoning and 
+estimation of friendsourcing costs for a personal document editing task.
+
+
+
+%Crowdsourcing, an approach of assigning tasks to distributed online users for solutions, 
+%has become an emerging technique for solving problems. 
+%The collective human intelligence has proved its power on tasks intractable to mere computing machines \cite{Kittur:CSCW13:FutureCrowd}. 
+%However, crowdsourcing may suffer from the crowds without necessary context to deliver appropriate solutions. 
+%A variety of branches of crowdsourcing are explored to leverage knowledge of specific groups under different contexts. 
+%Friendsourcing, or solving informational and computational tasks by mobilizing friends via social network sites (SNS) 
+%rather than unknown online workers,
+%has emerged to become a useful element of problem solving and system building. 
+%
+%Communication on SNSs not only motivates friends for providing solutions, 
+%but also plays as a key factor to increase one’s social capital \cite{Burke:CHI11:SocialCapitalsFB}. 
+%By one’s friend, we mean the individuals who share connection on SNSs with the person. 
+%From the point of view of communicative process, it is useful to consider how requesters and workers reach consensus in friendsourcing. 
+%For instance, monetary exchange is one of the factors that needs consensus. 
+%While one common assumption of friendsourcing is that money exchcange is not necessary \cite{Brady:HCOMP14:Microvolunteering}, 
+%the assumption has not been carefully verified. Would it be better that requesters still pay their friends in friendsourcing? 
+%Would friend workers expect any payback from the requesters? 
+%If so, what is the expected payback of the workers? 
+%
+%In this paper, we present an empirical study, including a survey-based study and a semi-structure interview, 
+%to understand how people utilize friendsourcing on current SNSs. 
+%All their answers and interviews are recorded and encoded, 
+%and every instance related to the expected value of the work is picked. 
+%Based on these picked data,
+%we concluded with several design implications for future friendsourcing system designers and researchers.
+%
+
+%
+%Along with the growth of online soical networking, 
+%it is unprecendentedly convenient for people to access their friends online at almost any time. 
+%It is a common practice that people ask questions and post requests on social network sites. 
+%Friendsourcing, or outsourcing informational and computational tasks to socially connected friends rather than unknown online workers, 
+%has emerged to become a useful element of problem solving and system building.
+%\marginpar{
+%\begin{figure}
+%  \includegraphics[width=1\marginparwidth]{figures/question_2.pdf}
+%  \caption{
+%The questionnaire from requesters' perspective in \emph{F} condition.
+%Payment options range between \$1 and \$900, each corresponds to a fixed range of \$150, 
+%resulting in six options (e.g., \$1 - 150, \$151 - 300, and so on). 
+%Three extra options are also added: ``\$0'', ``over \$901'', and ``others (than money)''. 
+%If a participant chooses ``over \$901'' or ``others'' in the questionnaires, 
+%the participant would be asked to help us convert their choices to equivalent monetary value if feasible, 
+%so that we may calculate the average perceived value. 
+%}
+%  \label{fig:question} 
+%\end{figure}
+%}
+%
+%One common assumption of friendsourcing is that monetary incentive is not necessary. 
+%However, this assumption has not been carefully verified. 
+%From the point of view of incentive design, it is useful to consider whether friendsourcing is really ``free''. 
+%Would it be better that requesters still pay their friends in friendsourcing? 
+%Would friend workers expect to receive payment from the requesters? 
+%If so, what is the expectation of the workers?
+%						
+%Recent work has estimated the social costs of friend- sourcing by looking at people's choices 
+%to friendsource versus crowdsource question asking when the costs of regular crowdsourcing vary \cite{Rzeszotarski:CHI14:SocialCost}. 
+%Consequently, people rely more on friendsourcing
+%(e.g., posting questions on personal social networks) when the cost of crowdsourcing increases, 
+%suggesting that people seem to consider friendsourcing generally cheaper. 
+%However, being free of monetary cost to post on social networking sites does not mean that 
+%friendsourcing should be free or is best to stay free of monetary cost, 
+%especially when quality of work and social reciprocity (``social debts'') are also considered.
+%						
+%Through a survey study, we address two underexplored research questions. 
+%First, as requesters, if people can choose to pay in friendsourcing, 
+%how much would they like to pay for a common task such as proofreading and editing a written article? 
+%Would it be higher or lower than other forms of outsourcing, 
+%such as crowdsourcing or expertsourcing (outsourcing a task to external experts)? 
+%Second, as workers, if people may receive payment in friendsourcing, 
+%how much would they expect to receive for the proofreading and editing task? 
+%Would it be higher or cheaper than other forms of outsourced work?
+
+%---- CSCW-submitted version above----%
+
+
+%Budget management is always an important issue on employment.
+%Extensive research on pricing strategies of crowdsourcing has been done previously,
+%aiming to find an optimal balance between cost and working quality \cite{Mason:HCOMP09:FinancialIncentives,Tran-Thanh:AAMAS14:BudgetFix}.
+%Unlike crowdsourcing, friendsourcing has attracted less attention on pricing strategies,
+%for its nature is based on social relationships rather than monetary incentives.
+%
+%Budget management is an important issue on labor marketspace. 
+%Considering crowdsourcing as a labor marketspace online, 
+%extensive research on pricing strategies of crowdsourcing has been done previously, 
+%aiming to understand the relation between incentives and working quality \cite{Mason:HCOMP09:FinancialIncentives, Shaw:CSCW11:InexpertRaters}. 
+%Unlike crowdsourcing, friendsourcing has attracted less attention on the strategy of managing compensation, 
+%for its nature is based on social relationships rather than monetary incentives.
+%
+%Social network sites make it possible for one to mobilize friends, utilizing their knowledge and labor online.
+%Users can post open calls to their social network and collects answers from their friends,
+%i.e. the individuals sharing social relationships with the requester. 
+%This characteristic makes friendsourcing more suitable for problems with personal infromation than other approaches of crowdsourcing.
+%Moreover, another advantage of friendsourcing is that one's social network is a potential pool of both skilled and unskilled labors,
+%and thus is more flexible to cope with various types of requests.
+
+
+%Social network sites make it possible for one to mobilize friends, 
+%utilizing their knowledge and labor online. 
+%Users can post open calls to their social network and collects answers from friends, 
+%which we define as the individuals who shares online social relationships with the requester. 
+%Crowdsourcing or expertsourcing easily suffers from lacking of personal information of the requester and tasks \cite{Kokkalis:CSCW13:EmailValet}. 
+%In the sense of personal context, friendsourcing is based on the social context of the requester, 
+%reducing privacy concerns and effort to ground the common knowledge \cite{Bernstein:TOCHI08:Collabio}. 
+%Moreover, another advantage of friendsourcing is that one’s social network is a potential pool of both skilled and unskilled labors, 
+%and thus is more flexible to cope with various types of requests.
+%
+%Rzeszotarski and Morris has transfered the social cost of friendsourcing into monetary reward
+%by contolling costs of crowdsourcing to observe users' decision \cite{Rzeszotarski:CSCW14:SocialCost}.
+%Utilizing one's social relationships, users expect low-cost or even free solutions for their requests.
+%When the cost of crowdsourcing is too high or the requests relie much on requesters' personal information,
+%users tend to turn to friendsourcing for solutions.
+%Nevertheless, we only know the tendency of users choices' between friendsourcing and crowdsourcing, 
+%but has no idea how friendsourcing should really cost. 
+%Therefore we address two research questions: 
+%Compared to the market price, 
+%(1. how much are requesters willing to pay in friendsourcing?
+%(2. how much reward do workers expect to receive in friendsourcing?
+
+%Rzeszotarski and Morris has transfered the social cost of friendsourcing into monetary reward 
+%by contolling costs of crowdsourcing to observe users’ decision \cite{Rzeszotarski:CSCW14:SocialCost}. 
+%When the financial cost of crowdsourcing is too high or the requests rely much on requesters’ personal information, 
+%users tend to turn to friendsourcing for solutions. 
+%In other words, users expect low-cost or even free solutions for their request utilizing one’s social relationships.
+%
+%Nevertheless, we only know the tendency of users choices’ between friendsourcing and crowdsourcing, 
+%but have no idea how friendsourcing should really cost based on the market price. 
+%Therefore we address two research questions: Compared to the market price, 
+%(1. how much requesters willing to pay in friendsourcing? 
+%(2. how much reward do workers expect to receive in friendsourcing?
+%
+
+%\subsection{Three types of crowdsourcing}
+%To understand the percived monetary exchange of friendsourcing, we involve crowdsourcing and expertsourcing, 
+%where requesters and workers are connected according to business contract.
+%The three types of crowdsourcing are distinct on the format of open requests and their audiences.
+%Friendsourcing \textit{F} utilizes the labor and knowledge of online friends to solve requests.
+%Crowdsourcing \textit{C} means that the open call is posted to arbitrary online workers, 
+%so the expertise of the workers is not expected (though the workers might be highly skilled).
+%Expertsourcing \textit{E} is based on the belief that both requesters and workers believe that the workers can provide high-level skill.
+%Figure~\ref{fig:sourcingframework} is the framework of the three different crowdsourcing approaches.
+
+%To understand the percived monetary exchange of friendsourcing, 
+%we compare it with crowdsourcing and expertsourcing, 
+%where requesters and workers are connected according to business contract. 
+%The three types of crowdsourcing are distinct on the format of open requests and their audiences. 
+%Friendsourcing F utilizes the labor and knowledge of online friends to solve requests. 
+%Crowdsourcing \textit{C} means that the open call is posted to arbitrary online workers, 
+%and the expertise of the workers is not expected (though the workers might be highly skilled). 
+%Expertsourcing \textit{E} is based on the belief that both requesters and workers believe that the workers can provide high-level skill. 
+%Figure~\ref{fig:sourcingframework} is the framework of the three different crowdsourcing approaches. 
+%
+%\marginpar{
+%\begin{figure}
+%  \centering
+%  \includegraphics[width=\marginparwidth]{figures/sourcingframework.pdf}
+%  \caption{
+%		   The framework of the three different crowdsourcing approaches. 
+%		   The size of the worker pool of crowdsourcing \textbf{C} is conceptually the biggest, since it uses general crowds as workers.
+%		   The size of friendsourcing \textbf{F}'s pool depends on the requester's social network, 
+%		   while the size of expertsourcing \textbf{E}'s pool is related to the required skills of the requests.
+%		  }
+%  \label{fig:sourcingframework} 
+%\end{figure}
+%}
+%%
+%Along with the growth of online soical networking, 
+%it is now unprecendently convenient for people to access their friends online at almost any time. 
+%It is a common practice that people may ask questions and post requests over social network sites or instant messaging. 
+%Friendsourcing, or outsourcing informational and computational tasks to socially connected friends rather than unknown online workers, 
+%has emerged and become a useful element and strategy for problem solving and system building.
+%
+%One intuition or assumption of friendsourcing is that monetary incentive is not necessary. 
+%However, this assumption has not been carefully verified. 
+%From the point of view of incentive design, it is useful to reconsider whether friendsourcing is really ``free''.
+%Would it be better that requesters still pay their friends in friendsourcing? 
+%Would friend workers expect to receive payment form the requesters? 
+%If so, what is the expected amount?
+%
+%Recent work has estimated the social costs of friendsourcing by looking at people's choices to friendsource 
+%versus crowdsource question asking tasks when the costs of regular crowdsourcing vary \cite{Rzeszotarski:CSCW14:SocialCost}. 
+%The results show that people rely more on friendsourcing (e.g., posting questions on personal social netwokrs) 
+%when costs of crowdsourcing increase, suggesting that people tend to consider friendsourcing cheaper than crowdsourcing. 
+%However, posting on a social network is free does not mean that friendsourcing should be free, 
+%especially when quality of work and social debts are considered. 
+%
+%Through a survey study, we address two research underexplored research questions. 
+%First, as requesters, if people can choose to pay when friendsourcing a task, how much are they willing to pay? 
+%Would it be higher or lower than making a request in crowdsourcing? 
+%Second, as workers, if people may receive payment by working on a friendsourced task, 
+%how much would they expect to receive? 
+%Would it be higher or cheaper than serving as a general crowd worker?
+%
+%
+%

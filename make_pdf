@@ -1,0 +1,9 @@
+rm -f *.aux *.log *.out *.blg *~ *.bbl *.pdf
+pdflatex WiP_EA_CHI15.tex
+bibtex WiP_EA_CHI15
+pdflatex WiP_EA_CHI15.tex
+pdflatex WiP_EA_CHI15.tex
+
+
+
+	
