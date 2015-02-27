@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: WiP_EA_CHI15.aux
+The style file: acm-sigchi.bst
+Database file #1: WiP_EA_CHI15.bib
+You've used 9 entries,
+            2243 wiz_defined-function locations,
+            590 strings with 5875 characters,
+and the built_in function-call counts, 4248 in all, are:
+= -- 426
+> -- 188
+< -- 0
++ -- 77
+- -- 68
+* -- 312
+:= -- 630
+add.period$ -- 27
+call.type$ -- 9
+change.case$ -- 61
+chr.to.int$ -- 0
+cite$ -- 9
+duplicate$ -- 172
+empty$ -- 341
+format.name$ -- 68
+if$ -- 933
+int.to.chr$ -- 0
+int.to.str$ -- 9
+missing$ -- 9
+newline$ -- 48
+num.names$ -- 18
+pop$ -- 73
+preamble$ -- 1
+purify$ -- 52
+quote$ -- 0
+skip$ -- 135
+stack$ -- 0
+substring$ -- 336
+swap$ -- 61
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 36
+warning$ -- 0
+while$ -- 41
+width$ -- 10
+write$ -- 98
